@@ -1,6 +1,5 @@
 from __future__ import annotations
 
-import io
 import json
 import random
 from pathlib import Path
@@ -135,12 +134,6 @@ def build_optimized_model(input_dim: int) -> Sequential:
         metrics=["accuracy"],
     )
     return model
-
-
-def model_summary_text(model: Sequential) -> str:
-    stream = io.StringIO()
-    model.summary(print_fn=lambda line: stream.write(line + "\n"))
-    return stream.getvalue()
 
 
 def save_history_plot(history: tf.keras.callbacks.History, title: str, filename: str) -> Path:
@@ -316,7 +309,6 @@ def train_and_evaluate() -> dict[str, object]:
     input_dim = x_train_scaled.shape[1]
 
     initial_model = build_initial_model(input_dim)
-    initial_summary = model_summary_text(initial_model)
     initial_history = initial_model.fit(
         x_train_scaled,
         y_train,
@@ -339,7 +331,6 @@ def train_and_evaluate() -> dict[str, object]:
 
     weights = class_weights_for(y_train)
     weighted_model = build_initial_model(input_dim)
-    weighted_summary = model_summary_text(weighted_model)
     weighted_history = weighted_model.fit(
         x_train_scaled,
         y_train,
@@ -362,7 +353,6 @@ def train_and_evaluate() -> dict[str, object]:
     )
 
     optimized_model = build_optimized_model(input_dim)
-    optimized_summary = model_summary_text(optimized_model)
     architecture_image = save_architecture_plot(input_dim)
     optimized_history = optimized_model.fit(
         x_train_scaled,
@@ -396,9 +386,6 @@ def train_and_evaluate() -> dict[str, object]:
         "train_shape": list(x_train.shape),
         "test_shape": list(x_test.shape),
         "class_weights": {str(key): value for key, value in weights.items()},
-        "initial_summary": initial_summary,
-        "weighted_summary": weighted_summary,
-        "optimized_summary": optimized_summary,
         "initial_results": initial_results,
         "weighted_results": weighted_results,
         "optimized_results": optimized_results,
@@ -424,9 +411,6 @@ def train_and_evaluate() -> dict[str, object]:
         json.dumps(outputs, indent=2, ensure_ascii=False),
         encoding="utf-8",
     )
-    (RESULTS_DIR / "rezumat_model_initial.txt").write_text(initial_summary, encoding="utf-8")
-    (RESULTS_DIR / "rezumat_model_ponderi_clase.txt").write_text(weighted_summary, encoding="utf-8")
-    (RESULTS_DIR / "rezumat_model_imbunatatit.txt").write_text(optimized_summary, encoding="utf-8")
 
     return outputs
 

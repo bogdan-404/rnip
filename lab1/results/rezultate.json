@@ -1,0 +1,848 @@
+{
+  "dataset_shape": [
+    750000,
+    18
+  ],
+  "head": [
+    {
+      "id": 0,
+      "age": 42,
+      "job": "technician",
+      "marital": "married",
+      "education": "secondary",
+      "default": "no",
+      "balance": 7,
+      "housing": "no",
+      "loan": "no",
+      "contact": "cellular",
+      "day": 25,
+      "month": "aug",
+      "duration": 117,
+      "campaign": 3,
+      "pdays": -1,
+      "previous": 0,
+      "poutcome": "unknown",
+      "y": 0
+    },
+    {
+      "id": 1,
+      "age": 38,
+      "job": "blue-collar",
+      "marital": "married",
+      "education": "secondary",
+      "default": "no",
+      "balance": 514,
+      "housing": "no",
+      "loan": "no",
+      "contact": "unknown",
+      "day": 18,
+      "month": "jun",
+      "duration": 185,
+      "campaign": 1,
+      "pdays": -1,
+      "previous": 0,
+      "poutcome": "unknown",
+      "y": 0
+    },
+    {
+      "id": 2,
+      "age": 36,
+      "job": "blue-collar",
+      "marital": "married",
+      "education": "secondary",
+      "default": "no",
+      "balance": 602,
+      "housing": "yes",
+      "loan": "no",
+      "contact": "unknown",
+      "day": 14,
+      "month": "may",
+      "duration": 111,
+      "campaign": 2,
+      "pdays": -1,
+      "previous": 0,
+      "poutcome": "unknown",
+      "y": 0
+    },
+    {
+      "id": 3,
+      "age": 27,
+      "job": "student",
+      "marital": "single",
+      "education": "secondary",
+      "default": "no",
+      "balance": 34,
+      "housing": "yes",
+      "loan": "no",
+      "contact": "unknown",
+      "day": 28,
+      "month": "may",
+      "duration": 10,
+      "campaign": 2,
+      "pdays": -1,
+      "previous": 0,
+      "poutcome": "unknown",
+      "y": 0
+    },
+    {
+      "id": 4,
+      "age": 26,
+      "job": "technician",
+      "marital": "married",
+      "education": "secondary",
+      "default": "no",
+      "balance": 889,
+      "housing": "yes",
+      "loan": "no",
+      "contact": "cellular",
+      "day": 3,
+      "month": "feb",
+      "duration": 902,
+      "campaign": 1,
+      "pdays": -1,
+      "previous": 0,
+      "poutcome": "unknown",
+      "y": 1
+    },
+    {
+      "id": 5,
+      "age": 24,
+      "job": "admin.",
+      "marital": "single",
+      "education": "secondary",
+      "default": "no",
+      "balance": 1882,
+      "housing": "yes",
+      "loan": "no",
+      "contact": "cellular",
+      "day": 20,
+      "month": "apr",
+      "duration": 1010,
+      "campaign": 3,
+      "pdays": -1,
+      "previous": 0,
+      "poutcome": "unknown",
+      "y": 0
+    },
+    {
+      "id": 6,
+      "age": 39,
+      "job": "blue-collar",
+      "marital": "married",
+      "education": "secondary",
+      "default": "no",
+      "balance": 0,
+      "housing": "no",
+      "loan": "no",
+      "contact": "telephone",
+      "day": 21,
+      "month": "nov",
+      "duration": 90,
+      "campaign": 1,
+      "pdays": -1,
+      "previous": 0,
+      "poutcome": "unknown",
+      "y": 0
+    },
+    {
+      "id": 7,
+      "age": 50,
+      "job": "admin.",
+      "marital": "single",
+      "education": "secondary",
+      "default": "no",
+      "balance": 1595,
+      "housing": "no",
+      "loan": "no",
+      "contact": "telephone",
+      "day": 31,
+      "month": "jul",
+      "duration": 49,
+      "campaign": 25,
+      "pdays": -1,
+      "previous": 0,
+      "poutcome": "unknown",
+      "y": 0
+    }
+  ],
+  "encoded_head": [
+    {
+      "age": 42,
+      "job": 9,
+      "marital": 1,
+      "education": 1,
+      "default": 0,
+      "balance": 7,
+      "housing": 0,
+      "loan": 0,
+      "contact": 0,
+      "day": 25,
+      "month": 1,
+      "duration": 117,
+      "campaign": 3,
+      "pdays": -1,
+      "previous": 0,
+      "poutcome": 3,
+      "y": 0
+    },
+    {
+      "age": 38,
+      "job": 1,
+      "marital": 1,
+      "education": 1,
+      "default": 0,
+      "balance": 514,
+      "housing": 0,
+      "loan": 0,
+      "contact": 2,
+      "day": 18,
+      "month": 6,
+      "duration": 185,
+      "campaign": 1,
+      "pdays": -1,
+      "previous": 0,
+      "poutcome": 3,
+      "y": 0
+    },
+    {
+      "age": 36,
+      "job": 1,
+      "marital": 1,
+      "education": 1,
+      "default": 0,
+      "balance": 602,
+      "housing": 1,
+      "loan": 0,
+      "contact": 2,
+      "day": 14,
+      "month": 8,
+      "duration": 111,
+      "campaign": 2,
+      "pdays": -1,
+      "previous": 0,
+      "poutcome": 3,
+      "y": 0
+    },
+    {
+      "age": 27,
+      "job": 8,
+      "marital": 2,
+      "education": 1,
+      "default": 0,
+      "balance": 34,
+      "housing": 1,
+      "loan": 0,
+      "contact": 2,
+      "day": 28,
+      "month": 8,
+      "duration": 10,
+      "campaign": 2,
+      "pdays": -1,
+      "previous": 0,
+      "poutcome": 3,
+      "y": 0
+    },
+    {
+      "age": 26,
+      "job": 9,
+      "marital": 1,
+      "education": 1,
+      "default": 0,
+      "balance": 889,
+      "housing": 1,
+      "loan": 0,
+      "contact": 0,
+      "day": 3,
+      "month": 3,
+      "duration": 902,
+      "campaign": 1,
+      "pdays": -1,
+      "previous": 0,
+      "poutcome": 3,
+      "y": 1
+    },
+    {
+      "age": 24,
+      "job": 0,
+      "marital": 2,
+      "education": 1,
+      "default": 0,
+      "balance": 1882,
+      "housing": 1,
+      "loan": 0,
+      "contact": 0,
+      "day": 20,
+      "month": 0,
+      "duration": 1010,
+      "campaign": 3,
+      "pdays": -1,
+      "previous": 0,
+      "poutcome": 3,
+      "y": 0
+    },
+    {
+      "age": 39,
+      "job": 1,
+      "marital": 1,
+      "education": 1,
+      "default": 0,
+      "balance": 0,
+      "housing": 0,
+      "loan": 0,
+      "contact": 1,
+      "day": 21,
+      "month": 9,
+      "duration": 90,
+      "campaign": 1,
+      "pdays": -1,
+      "previous": 0,
+      "poutcome": 3,
+      "y": 0
+    },
+    {
+      "age": 50,
+      "job": 0,
+      "marital": 2,
+      "education": 1,
+      "default": 0,
+      "balance": 1595,
+      "housing": 0,
+      "loan": 0,
+      "contact": 1,
+      "day": 31,
+      "month": 5,
+      "duration": 49,
+      "campaign": 25,
+      "pdays": -1,
+      "previous": 0,
+      "poutcome": 3,
+      "y": 0
+    }
+  ],
+  "describe": [
+    {
+      "coloana": "id",
+      "count": 750000.0,
+      "unique": "",
+      "top": "",
+      "freq": "",
+      "mean": 374999.5,
+      "std": 216506.49528362884,
+      "min": 0.0,
+      "25%": 187499.75,
+      "50%": 374999.5,
+      "75%": 562499.25,
+      "max": 749999.0
+    },
+    {
+      "coloana": "age",
+      "count": 750000.0,
+      "unique": "",
+      "top": "",
+      "freq": "",
+      "mean": 40.92639466666667,
+      "std": 10.098828887715879,
+      "min": 18.0,
+      "25%": 33.0,
+      "50%": 39.0,
+      "75%": 48.0,
+      "max": 95.0
+    },
+    {
+      "coloana": "job",
+      "count": 750000.0,
+      "unique": 12,
+      "top": "management",
+      "freq": 175541,
+      "mean": "",
+      "std": "",
+      "min": "",
+      "25%": "",
+      "50%": "",
+      "75%": "",
+      "max": ""
+    },
+    {
+      "coloana": "marital",
+      "count": 750000.0,
+      "unique": 3,
+      "top": "married",
+      "freq": 480759,
+      "mean": "",
+      "std": "",
+      "min": "",
+      "25%": "",
+      "50%": "",
+      "75%": "",
+      "max": ""
+    },
+    {
+      "coloana": "education",
+      "count": 750000.0,
+      "unique": 4,
+      "top": "secondary",
+      "freq": 401683,
+      "mean": "",
+      "std": "",
+      "min": "",
+      "25%": "",
+      "50%": "",
+      "75%": "",
+      "max": ""
+    },
+    {
+      "coloana": "default",
+      "count": 750000.0,
+      "unique": 2,
+      "top": "no",
+      "freq": 737151,
+      "mean": "",
+      "std": "",
+      "min": "",
+      "25%": "",
+      "50%": "",
+      "75%": "",
+      "max": ""
+    },
+    {
+      "coloana": "balance",
+      "count": 750000.0,
+      "unique": "",
+      "top": "",
+      "freq": "",
+      "mean": 1204.0673973333332,
+      "std": 2836.096758725044,
+      "min": -8019.0,
+      "25%": 0.0,
+      "50%": 634.0,
+      "75%": 1390.0,
+      "max": 99717.0
+    },
+    {
+      "coloana": "housing",
+      "count": 750000.0,
+      "unique": 2,
+      "top": "yes",
+      "freq": 411288,
+      "mean": "",
+      "std": "",
+      "min": "",
+      "25%": "",
+      "50%": "",
+      "75%": "",
+      "max": ""
+    },
+    {
+      "coloana": "loan",
+      "count": 750000.0,
+      "unique": 2,
+      "top": "no",
+      "freq": 645023,
+      "mean": "",
+      "std": "",
+      "min": "",
+      "25%": "",
+      "50%": "",
+      "75%": "",
+      "max": ""
+    },
+    {
+      "coloana": "contact",
+      "count": 750000.0,
+      "unique": 3,
+      "top": "cellular",
+      "freq": 486655,
+      "mean": "",
+      "std": "",
+      "min": "",
+      "25%": "",
+      "50%": "",
+      "75%": "",
+      "max": ""
+    },
+    {
+      "coloana": "day",
+      "count": 750000.0,
+      "unique": "",
+      "top": "",
+      "freq": "",
+      "mean": 16.117209333333335,
+      "std": 8.250832326124739,
+      "min": 1.0,
+      "25%": 9.0,
+      "50%": 17.0,
+      "75%": 21.0,
+      "max": 31.0
+    },
+    {
+      "coloana": "month",
+      "count": 750000.0,
+      "unique": 12,
+      "top": "may",
+      "freq": 228411,
+      "mean": "",
+      "std": "",
+      "min": "",
+      "25%": "",
+      "50%": "",
+      "75%": "",
+      "max": ""
+    },
+    {
+      "coloana": "duration",
+      "count": 750000.0,
+      "unique": "",
+      "top": "",
+      "freq": "",
+      "mean": 256.229144,
+      "std": 272.5556619172416,
+      "min": 1.0,
+      "25%": 91.0,
+      "50%": 133.0,
+      "75%": 361.0,
+      "max": 4918.0
+    },
+    {
+      "coloana": "campaign",
+      "count": 750000.0,
+      "unique": "",
+      "top": "",
+      "freq": "",
+      "mean": 2.577008,
+      "std": 2.7185137400839587,
+      "min": 1.0,
+      "25%": 1.0,
+      "50%": 2.0,
+      "75%": 3.0,
+      "max": 63.0
+    },
+    {
+      "coloana": "pdays",
+      "count": 750000.0,
+      "unique": "",
+      "top": "",
+      "freq": "",
+      "mean": 22.412733333333332,
+      "std": 77.3199981443247,
+      "min": -1.0,
+      "25%": -1.0,
+      "50%": -1.0,
+      "75%": -1.0,
+      "max": 871.0
+    },
+    {
+      "coloana": "previous",
+      "count": 750000.0,
+      "unique": "",
+      "top": "",
+      "freq": "",
+      "mean": 0.29854533333333333,
+      "std": 1.3359260446881347,
+      "min": 0.0,
+      "25%": 0.0,
+      "50%": 0.0,
+      "75%": 0.0,
+      "max": 200.0
+    },
+    {
+      "coloana": "poutcome",
+      "count": 750000.0,
+      "unique": 4,
+      "top": "unknown",
+      "freq": 672450,
+      "mean": "",
+      "std": "",
+      "min": "",
+      "25%": "",
+      "50%": "",
+      "75%": "",
+      "max": ""
+    },
+    {
+      "coloana": "y",
+      "count": 750000.0,
+      "unique": "",
+      "top": "",
+      "freq": "",
+      "mean": 0.12065066666666667,
+      "std": 0.32572108430146474,
+      "min": 0.0,
+      "25%": 0.0,
+      "50%": 0.0,
+      "75%": 0.0,
+      "max": 1.0
+    }
+  ],
+  "null_values": {
+    "id": 0,
+    "age": 0,
+    "job": 0,
+    "marital": 0,
+    "education": 0,
+    "default": 0,
+    "balance": 0,
+    "housing": 0,
+    "loan": 0,
+    "contact": 0,
+    "day": 0,
+    "month": 0,
+    "duration": 0,
+    "campaign": 0,
+    "pdays": 0,
+    "previous": 0,
+    "poutcome": 0,
+    "y": 0
+  },
+  "target_distribution": {
+    "0": 659512,
+    "1": 90488
+  },
+  "encoders": {
+    "job": {
+      "admin.": 0,
+      "blue-collar": 1,
+      "entrepreneur": 2,
+      "housemaid": 3,
+      "management": 4,
+      "retired": 5,
+      "self-employed": 6,
+      "services": 7,
+      "student": 8,
+      "technician": 9,
+      "unemployed": 10,
+      "unknown": 11
+    },
+    "marital": {
+      "divorced": 0,
+      "married": 1,
+      "single": 2
+    },
+    "education": {
+      "primary": 0,
+      "secondary": 1,
+      "tertiary": 2,
+      "unknown": 3
+    },
+    "default": {
+      "no": 0,
+      "yes": 1
+    },
+    "housing": {
+      "no": 0,
+      "yes": 1
+    },
+    "loan": {
+      "no": 0,
+      "yes": 1
+    },
+    "contact": {
+      "cellular": 0,
+      "telephone": 1,
+      "unknown": 2
+    },
+    "month": {
+      "apr": 0,
+      "aug": 1,
+      "dec": 2,
+      "feb": 3,
+      "jan": 4,
+      "jul": 5,
+      "jun": 6,
+      "mar": 7,
+      "may": 8,
+      "nov": 9,
+      "oct": 10,
+      "sep": 11
+    },
+    "poutcome": {
+      "failure": 0,
+      "other": 1,
+      "success": 2,
+      "unknown": 3
+    }
+  },
+  "train_shape": [
+    525000,
+    16
+  ],
+  "test_shape": [
+    225000,
+    16
+  ],
+  "class_weights": {
+    "0": 0.5686027318924398,
+    "1": 4.144169745192763
+  },
+  "initial_summary": "Model: \"model_rna_initial\"\n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━┓\n┃ Layer (type)                    ┃ Output Shape           ┃       Param # ┃\n┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━┩\n│ strat_dense_1 (Dense)           │ (None, 32)             │           544 │\n├─────────────────────────────────┼────────────────────────┼───────────────┤\n│ strat_dense_2 (Dense)           │ (None, 16)             │           528 │\n├─────────────────────────────────┼────────────────────────┼───────────────┤\n│ iesire_sigmoid (Dense)          │ (None, 1)              │            17 │\n└─────────────────────────────────┴────────────────────────┴───────────────┘\n Total params: 1,089 (4.25 KB)\n Trainable params: 1,089 (4.25 KB)\n Non-trainable params: 0 (0.00 B)\n\n",
+  "weighted_summary": "Model: \"model_rna_initial\"\n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━┓\n┃ Layer (type)                    ┃ Output Shape           ┃       Param # ┃\n┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━┩\n│ strat_dense_1 (Dense)           │ (None, 32)             │           544 │\n├─────────────────────────────────┼────────────────────────┼───────────────┤\n│ strat_dense_2 (Dense)           │ (None, 16)             │           528 │\n├─────────────────────────────────┼────────────────────────┼───────────────┤\n│ iesire_sigmoid (Dense)          │ (None, 1)              │            17 │\n└─────────────────────────────────┴────────────────────────┴───────────────┘\n Total params: 1,089 (4.25 KB)\n Trainable params: 1,089 (4.25 KB)\n Non-trainable params: 0 (0.00 B)\n\n",
+  "optimized_summary": "Model: \"model_rna_imbunatatit\"\n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━┓\n┃ Layer (type)                    ┃ Output Shape           ┃       Param # ┃\n┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━┩\n│ dense_128 (Dense)               │ (None, 128)            │         2,176 │\n├─────────────────────────────────┼────────────────────────┼───────────────┤\n│ normalizare_lot_1               │ (None, 128)            │           512 │\n│ (BatchNormalization)            │                        │               │\n├─────────────────────────────────┼────────────────────────┼───────────────┤\n│ abandon_30_1 (Dropout)          │ (None, 128)            │             0 │\n├─────────────────────────────────┼────────────────────────┼───────────────┤\n│ dense_64 (Dense)                │ (None, 64)             │         8,256 │\n├─────────────────────────────────┼────────────────────────┼───────────────┤\n│ normalizare_lot_2               │ (None, 64)             │           256 │\n│ (BatchNormalization)            │                        │               │\n├─────────────────────────────────┼────────────────────────┼───────────────┤\n│ abandon_25 (Dropout)            │ (None, 64)             │             0 │\n├─────────────────────────────────┼────────────────────────┼───────────────┤\n│ dense_32 (Dense)                │ (None, 32)             │         2,080 │\n├─────────────────────────────────┼────────────────────────┼───────────────┤\n│ normalizare_lot_3               │ (None, 32)             │           128 │\n│ (BatchNormalization)            │                        │               │\n├─────────────────────────────────┼────────────────────────┼───────────────┤\n│ abandon_20 (Dropout)            │ (None, 32)             │             0 │\n├─────────────────────────────────┼────────────────────────┼───────────────┤\n│ iesire_sigmoid (Dense)          │ (None, 1)              │            33 │\n└─────────────────────────────────┴────────────────────────┴───────────────┘\n Total params: 13,441 (52.50 KB)\n Trainable params: 12,993 (50.75 KB)\n Non-trainable params: 448 (1.75 KB)\n\n",
+  "initial_results": {
+    "accuracy": 0.9099244444444444,
+    "confusion_matrix": [
+      [
+        190596,
+        7258
+      ],
+      [
+        13009,
+        14137
+      ]
+    ],
+    "classification_report": {
+      "0": {
+        "precision": 0.9361066771444709,
+        "recall": 0.9633163848090006,
+        "f1-score": 0.9495166380626664,
+        "support": 197854.0
+      },
+      "1": {
+        "precision": 0.6607618602477214,
+        "recall": 0.5207765416635969,
+        "f1-score": 0.5824766692074741,
+        "support": 27146.0
+      },
+      "accuracy": 0.9099244444444444,
+      "macro avg": {
+        "precision": 0.7984342686960961,
+        "recall": 0.7420464632362987,
+        "f1-score": 0.7659966536350702,
+        "support": 225000.0
+      },
+      "weighted avg": {
+        "precision": 0.9028866309245636,
+        "recall": 0.9099244444444444,
+        "f1-score": 0.905233673642475,
+        "support": 225000.0
+      }
+    },
+    "classification_report_text": "              precision    recall  f1-score   support\n\n           0       0.94      0.96      0.95    197854\n           1       0.66      0.52      0.58     27146\n\n    accuracy                           0.91    225000\n   macro avg       0.80      0.74      0.77    225000\nweighted avg       0.90      0.91      0.91    225000\n",
+    "predicted_counts": {
+      "0": 203605,
+      "1": 21395
+    }
+  },
+  "weighted_results": {
+    "accuracy": 0.8451333333333333,
+    "confusion_matrix": [
+      [
+        165580,
+        32274
+      ],
+      [
+        2571,
+        24575
+      ]
+    ],
+    "classification_report": {
+      "0": {
+        "precision": 0.9847101712151578,
+        "recall": 0.8368797193890445,
+        "f1-score": 0.9047963825630797,
+        "support": 197854.0
+      },
+      "1": {
+        "precision": 0.4322855283294341,
+        "recall": 0.9052899137994548,
+        "f1-score": 0.5851538782070361,
+        "support": 27146.0
+      },
+      "accuracy": 0.8451333333333333,
+      "macro avg": {
+        "precision": 0.708497849772296,
+        "recall": 0.8710848165942496,
+        "f1-score": 0.7449751303850579,
+        "support": 225000.0
+      },
+      "weighted avg": {
+        "precision": 0.918060751856154,
+        "recall": 0.8451333333333333,
+        "f1-score": 0.8662318695708612,
+        "support": 225000.0
+      }
+    },
+    "classification_report_text": "              precision    recall  f1-score   support\n\n           0       0.98      0.84      0.90    197854\n           1       0.43      0.91      0.59     27146\n\n    accuracy                           0.85    225000\n   macro avg       0.71      0.87      0.74    225000\nweighted avg       0.92      0.85      0.87    225000\n",
+    "predicted_counts": {
+      "0": 168151,
+      "1": 56849
+    }
+  },
+  "optimized_results": {
+    "accuracy": 0.8419644444444444,
+    "confusion_matrix": [
+      [
+        164276,
+        33578
+      ],
+      [
+        1980,
+        25166
+      ]
+    ],
+    "classification_report": {
+      "0": {
+        "precision": 0.9880906553748436,
+        "recall": 0.8302890009805209,
+        "f1-score": 0.9023426986350279,
+        "support": 197854.0
+      },
+      "1": {
+        "precision": 0.4284011984202642,
+        "recall": 0.9270610771384366,
+        "f1-score": 0.5860053556875072,
+        "support": 27146.0
+      },
+      "accuracy": 0.8419644444444444,
+      "macro avg": {
+        "precision": 0.708245926897554,
+        "recall": 0.8786750390594787,
+        "f1-score": 0.7441740271612676,
+        "support": 225000.0
+      },
+      "weighted avg": {
+        "precision": 0.9205647442704481,
+        "recall": 0.8419644444444444,
+        "f1-score": 0.8641769496943461,
+        "support": 225000.0
+      }
+    },
+    "classification_report_text": "              precision    recall  f1-score   support\n\n           0       0.99      0.83      0.90    197854\n           1       0.43      0.93      0.59     27146\n\n    accuracy                           0.84    225000\n   macro avg       0.71      0.88      0.74    225000\nweighted avg       0.92      0.84      0.86    225000\n",
+    "predicted_counts": {
+      "0": 166256,
+      "1": 58744
+    }
+  },
+  "metrics_summary": {
+    "model_initial": {
+      "acuratete": 0.9099244444444444,
+      "precizie_clasa_1": 0.6607618602477214,
+      "recall_clasa_1": 0.5207765416635969,
+      "f1_clasa_1": 0.5824766692074741,
+      "f1_macro": 0.7659966536350702
+    },
+    "model_ponderi_clase": {
+      "acuratete": 0.8451333333333333,
+      "precizie_clasa_1": 0.4322855283294341,
+      "recall_clasa_1": 0.9052899137994548,
+      "f1_clasa_1": 0.5851538782070361,
+      "f1_macro": 0.7449751303850579
+    },
+    "model_imbunatatit": {
+      "acuratete": 0.8419644444444444,
+      "precizie_clasa_1": 0.4284011984202642,
+      "recall_clasa_1": 0.9270610771384366,
+      "f1_clasa_1": 0.5860053556875072,
+      "f1_macro": 0.7441740271612676
+    }
+  },
+  "images": {
+    "class_distribution": "01_distributia_clasei_tinta.png",
+    "correlations": "02_harta_corelatiilor.png",
+    "initial_history": "03_istoric_model_initial.png",
+    "initial_results": "04_rezultate_model_initial.png",
+    "weighted_history": "05_istoric_ponderi_clase.png",
+    "weighted_results": "06_rezultate_ponderi_clase.png",
+    "architecture": "06_model_rna_imbunatatit.png",
+    "optimized_history": "07_istoric_model_imbunatatit.png",
+    "optimized_results": "08_rezultate_model_imbunatatit.png"
+  }
+}
