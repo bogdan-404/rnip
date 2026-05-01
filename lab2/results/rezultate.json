@@ -1,0 +1,41 @@
+{
+  "dataset": {
+    "train": "/Users/bogdanzlatovcen/Documents/uni/year1/rnip/lab2/DATASET/TRAIN",
+    "test": "/Users/bogdanzlatovcen/Documents/uni/year1/rnip/lab2/DATASET/TEST",
+    "clase_train": [
+      "O",
+      "R"
+    ],
+    "numar_imagini_train_pe_clasa": {
+      "O": 12565,
+      "R": 9999
+    },
+    "numar_imagini_test_pe_clasa": {
+      "O": 1401,
+      "R": 1112
+    }
+  },
+  "etichete": {
+    "O": 0,
+    "R": 1
+  },
+  "cnn_test": {
+    "loss": 0.4031505584716797,
+    "accuracy": 0.8225228786468506
+  },
+  "resnet50_test": {
+    "loss": 0.2179110050201416,
+    "accuracy": 0.9267807602882385
+  },
+  "inceptionv3_test": {
+    "loss": 0.2845878303050995,
+    "accuracy": 0.8758456110954285
+  },
+  "imagini": {
+    "primele_10": "01_primele_10_imagini.png",
+    "exemplu_clase": "02_exemplu_fiecare_clasa.png",
+    "istoric_cnn": "03_istoric_cnn.png",
+    "istoric_resnet": "04_istoric_resnet50.png",
+    "istoric_inception": "05_istoric_inceptionv3.png"
+  }
+}

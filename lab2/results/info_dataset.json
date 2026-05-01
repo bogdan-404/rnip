@@ -1,0 +1,16 @@
+{
+  "train": "/Users/bogdanzlatovcen/Documents/uni/year1/rnip/lab2/DATASET/TRAIN",
+  "test": "/Users/bogdanzlatovcen/Documents/uni/year1/rnip/lab2/DATASET/TEST",
+  "clase_train": [
+    "O",
+    "R"
+  ],
+  "numar_imagini_train_pe_clasa": {
+    "O": 12565,
+    "R": 9999
+  },
+  "numar_imagini_test_pe_clasa": {
+    "O": 1401,
+    "R": 1112
+  }
+}
